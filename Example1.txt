@@ -1,0 +1,62 @@
+# input 1
+arr1 = [5, 20, 3, 11, 1, 17, 3, 12, 8, 10]
+
+# sort 1
+swapcount1 = 0
+swap1 = true
+size1 = arr1.length - 1
+while swap1
+  swap1 = false
+  for i in 0...size1
+    swap1 = arr1[i] > arr1[i + 1]
+    if swap1
+      swapcount1 += 1
+      temp1 = arr1[i] 
+      arr1[i] = arr1[i + 1]
+      arr1[i + 1] = temp1
+    end
+  end
+  size1 -= 1
+end
+
+# output 1
+puts arr1.join(' ')
+puts size1
+puts swapcount1
+
+n = 5
+
+# input 2
+arr2 = []
+j = 0
+gets lastelementnum.to_i
+maxn = lastelementnum + 1 
+while j < maxn
+  gets arr2[j].to_i
+  j += 1
+end
+
+# sort 2
+swapcount2 = 0
+swap2 = true
+size2 = arr2.length - 1
+while swap2
+  swap2 = false
+  for j in 0...size2
+    swap2 = arr2[j] > arr2[j + 1]
+    if swap2
+      swapcount2 += 1
+      temp2 = arr2[j] 
+      arr2[j] = arr2[j + 1]
+      arr2[j + 1] = temp2
+    end
+  end
+  size2 -= 1
+end
+
+# output 2
+puts arr2.join(' ')
+puts size2
+puts swapcount2
+
+m = 10
